@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserRolTable extends Migration
+class CreateGendersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateUserRolTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_rol', function (Blueprint $table) {
+        Schema::create('genders', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('user');
-            $table->bigInteger('rol_id')->unsigned();
-            $table->foreign('rol_id')->references('id')->on('rol');
+            $table->string('names', 25);
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateUserRolTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_rol');
+        Schema::dropIfExists('genders');
     }
 }

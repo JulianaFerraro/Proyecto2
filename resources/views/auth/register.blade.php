@@ -34,7 +34,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                        
+                        </div>
 
 
                         <div class="form-group row">
@@ -115,7 +115,7 @@
                                     @endforeach
                                 </select>
                             </div>
-
+                        </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo Electronico') }}</label>
@@ -155,6 +155,7 @@
                                     @endforeach
                                 </select>
                             </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">

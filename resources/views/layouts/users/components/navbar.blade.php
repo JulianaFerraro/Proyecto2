@@ -33,7 +33,8 @@
           <i class="fa fa-shopping-cart" style="padding-left: 17em;"></i>
           <li class="nav-item active">
           <i class="fa fa-user" style="padding-left: 1em;"></i><span class="component-target-text">
-          <a href=""> Ingresar</a></span></a>
+          <a href= " {{url ('login') }} "> Ingresar</a></span></a>
+          <a href= " {{url ('register')}} "> Registrar</a></span></a>
           </li>
       </ul>
       </div>
